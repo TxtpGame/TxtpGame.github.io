@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-19T07:15:31.464Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="a5QC5fHVSnPFAlQQc8ut" version="15.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-19T07:35:00.280Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="T35ODprgdiamfYV6VdXm" version="15.8.8" type="github">
   <diagram id="snWvjUAeTah8dT2ijQAc" name="Page-1">
-    <mxGraphModel dx="1422" dy="721" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="721" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,6 +15,18 @@
         </mxCell>
         <mxCell id="hhUrES_gIzhzEsyMibEw-3" value="&lt;font color=&quot;#00cc66&quot;&gt;//示例&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;If&amp;lt;Condition&amp;gt;::F();&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="327" y="27" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6aqVJjIVT79ClHKyngEW-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="39" y="493" width="233" height="386" as="geometry" />
+        </mxCell>
+        <mxCell id="6aqVJjIVT79ClHKyngEW-2" value="&lt;pre&gt;&lt;font style=&quot;font-size: 18px&quot; face=&quot;Helvetica&quot;&gt;&lt;font color=&quot;#00cc66&quot;&gt;//主模板&lt;/font&gt;&lt;br&gt;template &amp;lt;int N&amp;gt;&lt;br&gt;struct For {&lt;br&gt;    static inline void F() {&lt;br&gt;        //待执行的语句&lt;br&gt;        &lt;font color=&quot;#ff0000&quot;&gt;For&amp;lt;N - 1&amp;gt;::F();&lt;/font&gt;&lt;br&gt;    }&lt;br&gt;};&lt;/font&gt;&lt;/pre&gt;&lt;pre&gt;&lt;font style=&quot;font-size: 18px&quot; face=&quot;Helvetica&quot;&gt;&lt;br&gt;&lt;font color=&quot;#00cc66&quot;&gt;//特化N=0，来终止调用&lt;/font&gt;&lt;br&gt;template &amp;lt;&amp;gt;&lt;br&gt;struct For&amp;lt;0&amp;gt; {&lt;br&gt;    static inline void F() {&lt;br&gt;        //待执行的语句&lt;br&gt;    }&lt;br&gt;};&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="53" y="498" width="251" height="373" as="geometry" />
+        </mxCell>
+        <mxCell id="6aqVJjIVT79ClHKyngEW-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="311" y="493" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6aqVJjIVT79ClHKyngEW-4" value="&lt;font color=&quot;#00cc66&quot;&gt;//示例&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;For&amp;lt;10&amp;gt;::F();&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="325" y="498" width="180" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
